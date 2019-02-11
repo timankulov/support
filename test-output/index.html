@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY">
+              <span class="suite-name border-passed">SMOKE TESTS SUPPLY</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SMOKE_TESTS_SUPPLY">
+                    <span>C:\all\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SMOKE_TESTS_SUPPLY">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SMOKE_TESTS_SUPPLY">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SMOKE_TESTS_SUPPLY">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SMOKE_TESTS_SUPPLY">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SMOKE_TESTS_SUPPLY">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SMOKE_TESTS_SUPPLY">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SMOKE_TESTS_SUPPLY" class="hide-methods passed suite-SMOKE_TESTS_SUPPLY"> (hide)</a> <!-- hide-methods passed suite-SMOKE_TESTS_SUPPLY -->
+                      <a href="#" panel-name="suite-SMOKE_TESTS_SUPPLY" class="show-methods passed suite-SMOKE_TESTS_SUPPLY"> (show)</a> <!-- show-methods passed suite-SMOKE_TESTS_SUPPLY -->
+                    </span>
+                    <div class="method-list-content passed suite-SMOKE_TESTS_SUPPLY">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke1(sotrudnik, sotrudnik)">smoke1(sotrudnik, sotrudnik)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke10(snabjenec, snabjenec)">smoke10(snabjenec, snabjenec)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke11(sotrudnik, sotrudnik)">smoke11(sotrudnik, sotrudnik)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke2(nomenklatura, nomenklatura)">smoke2(nomenklatura, nomenklatura)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke3(sklad, sklad)">smoke3(sklad, sklad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke4(snabjenec, snabjenec)">smoke4(snabjenec, snabjenec)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke5(sotrudnik, sotrudnik)">smoke5(sotrudnik, sotrudnik)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...)">smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke7(sotrudnik, sotrudnik)">smoke7(sotrudnik, sotrudnik)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke8(nomenklatura, nomenklatura)">smoke8(nomenklatura, nomenklatura)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SMOKE_TESTS_SUPPLY" title="com.tests.smoke.Smoke1" hash-for-method="smoke9(sklad, sklad)">smoke9(sklad, sklad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SMOKE_TESTS_SUPPLY -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SMOKE_TESTS_SUPPLY" class="panel SMOKE_TESTS_SUPPLY">
+          <div class="suite-SMOKE_TESTS_SUPPLY-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tests.smoke.Smoke1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke1(sotrudnik, sotrudnik)">
+                  </a> <!-- smoke1(sotrudnik, sotrudnik) -->
+                  <span class="method-name">smoke1</span>
+                  <span class="parameters">(sotrudnik, sotrudnik)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke10(snabjenec, snabjenec)">
+                  </a> <!-- smoke10(snabjenec, snabjenec) -->
+                  <span class="method-name">smoke10</span>
+                  <span class="parameters">(snabjenec, snabjenec)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke11(sotrudnik, sotrudnik)">
+                  </a> <!-- smoke11(sotrudnik, sotrudnik) -->
+                  <span class="method-name">smoke11</span>
+                  <span class="parameters">(sotrudnik, sotrudnik)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke2(nomenklatura, nomenklatura)">
+                  </a> <!-- smoke2(nomenklatura, nomenklatura) -->
+                  <span class="method-name">smoke2</span>
+                  <span class="parameters">(nomenklatura, nomenklatura)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke3(sklad, sklad)">
+                  </a> <!-- smoke3(sklad, sklad) -->
+                  <span class="method-name">smoke3</span>
+                  <span class="parameters">(sklad, sklad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke4(snabjenec, snabjenec)">
+                  </a> <!-- smoke4(snabjenec, snabjenec) -->
+                  <span class="method-name">smoke4</span>
+                  <span class="parameters">(snabjenec, snabjenec)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke5(sotrudnik, sotrudnik)">
+                  </a> <!-- smoke5(sotrudnik, sotrudnik) -->
+                  <span class="method-name">smoke5</span>
+                  <span class="parameters">(sotrudnik, sotrudnik)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...)">
+                  </a> <!-- smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...) -->
+                  <span class="method-name">smoke6</span>
+                  <span class="parameters">(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, snabjenec)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke7(sotrudnik, sotrudnik)">
+                  </a> <!-- smoke7(sotrudnik, sotrudnik) -->
+                  <span class="method-name">smoke7</span>
+                  <span class="parameters">(sotrudnik, sotrudnik)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke8(nomenklatura, nomenklatura)">
+                  </a> <!-- smoke8(nomenklatura, nomenklatura) -->
+                  <span class="method-name">smoke8</span>
+                  <span class="parameters">(nomenklatura, nomenklatura)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smoke9(sklad, sklad)">
+                  </a> <!-- smoke9(sklad, sklad) -->
+                  <span class="method-name">smoke9</span>
+                  <span class="parameters">(sklad, sklad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SMOKE_TESTS_SUPPLY-class-passed -->
+        </div> <!-- panel SMOKE_TESTS_SUPPLY -->
+        <div panel-name="test-xml-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\all\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SMOKE TESTS SUPPLY&quot;&gt;
+  &lt;parameter name=&quot;golos_password&quot; value=&quot;a.li&quot;/&gt;
+  &lt;parameter name=&quot;contact_password&quot; value=&quot;testovoikompanii1&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;golos&quot; value=&quot;a.li&quot;/&gt;
+  &lt;parameter name=&quot;contact&quot; value=&quot;s.testovoikompanii1@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;urlQA&quot; value=&quot;http://supqa.groupstp.ru:8008/app/#!&quot;/&gt;
+  &lt;parameter name=&quot;postavshik2&quot; value=&quot;t.postavshik2@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;postavshik3&quot; value=&quot;t.postavshik3@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;http://suptest.groupstp.ru/app/#!&quot;/&gt;
+  &lt;parameter name=&quot;platform&quot; value=&quot;test&quot;/&gt;
+  &lt;parameter name=&quot;postavshik1&quot; value=&quot;t.postavshik1@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;email_password&quot; value=&quot;postavshik&quot;/&gt;
+  &lt;test name=&quot;SMOKE TESTS&quot;&gt;
+    &lt;parameter name=&quot;sklad&quot; value=&quot;sklad&quot;/&gt;
+    &lt;parameter name=&quot;nomenklatura&quot; value=&quot;nomenklatura&quot;/&gt;
+    &lt;parameter name=&quot;snabjenec_password&quot; value=&quot;snabjenec&quot;/&gt;
+    &lt;parameter name=&quot;nomenklatura_password&quot; value=&quot;nomenklatura&quot;/&gt;
+    &lt;parameter name=&quot;admin&quot; value=&quot;admin&quot;/&gt;
+    &lt;parameter name=&quot;sotrudnik&quot; value=&quot;sotrudnik&quot;/&gt;
+    &lt;parameter name=&quot;admin_password&quot; value=&quot;1qaz2wsx&quot;/&gt;
+    &lt;parameter name=&quot;sklad_password&quot; value=&quot;sklad&quot;/&gt;
+    &lt;parameter name=&quot;snabjenec&quot; value=&quot;snabjenec&quot;/&gt;
+    &lt;parameter name=&quot;sotrudnik_password&quot; value=&quot;sotrudnik&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.tests.smoke.Smoke1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SMOKE TESTS --&gt;
+&lt;/suite&gt; &lt;!-- SMOKE TESTS SUPPLY --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SMOKE TESTS SUPPLY</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SMOKE TESTS (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SMOKE TESTS SUPPLY</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke4</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke6</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke7</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke8</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">smoke9</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SMOKE TESTS SUPPLY</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SMOKE_TESTS_SUPPLY');
+function tableData_SMOKE_TESTS_SUPPLY() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'smoke6')
+data.setCell(0, 2, 'com.tests.smoke.Smoke1')
+data.setCell(0, 3, 321008);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'smoke5')
+data.setCell(1, 2, 'com.tests.smoke.Smoke1')
+data.setCell(1, 3, 190573);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'smoke1')
+data.setCell(2, 2, 'com.tests.smoke.Smoke1')
+data.setCell(2, 3, 70342);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'smoke10')
+data.setCell(3, 2, 'com.tests.smoke.Smoke1')
+data.setCell(3, 3, 65468);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'smoke4')
+data.setCell(4, 2, 'com.tests.smoke.Smoke1')
+data.setCell(4, 3, 39277);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'smoke8')
+data.setCell(5, 2, 'com.tests.smoke.Smoke1')
+data.setCell(5, 3, 35456);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'smoke9')
+data.setCell(6, 2, 'com.tests.smoke.Smoke1')
+data.setCell(6, 3, 34342);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'smoke7')
+data.setCell(7, 2, 'com.tests.smoke.Smoke1')
+data.setCell(7, 3, 33935);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'smoke11')
+data.setCell(8, 2, 'com.tests.smoke.Smoke1')
+data.setCell(8, 3, 24554);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'smoke2')
+data.setCell(9, 2, 'com.tests.smoke.Smoke1')
+data.setCell(9, 3, 23900);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'smoke3')
+data.setCell(10, 2, 'com.tests.smoke.Smoke1')
+data.setCell(10, 3, 20787);
+window.suiteTableData['SMOKE_TESTS_SUPPLY']= { tableData: data, tableDiv: 'times-div-SMOKE_TESTS_SUPPLY'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <div id="times-div-SMOKE_TESTS_SUPPLY">
+              </div> <!-- times-div-SMOKE_TESTS_SUPPLY -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SMOKE TESTS SUPPLY</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke2(nomenklatura, nomenklatura)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke2.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke2 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke6.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke6 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke9(sklad, sklad)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke9.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke9 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke4(snabjenec, snabjenec)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke4.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke4 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke7(sotrudnik, sotrudnik)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke7.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke7 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke5(sotrudnik, sotrudnik)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke5.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke5 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke11(sotrudnik, sotrudnik)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke11.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke11 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke1(sotrudnik, sotrudnik)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke1.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke1 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke10(snabjenec, snabjenec)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke10.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke10 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke3(sklad, sklad)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke3.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke3 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">smoke8(nomenklatura, nomenklatura)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></details></b></span>
+                <span class="reporter-method-output"><a href=..\videos\smoke8.avi download="filename">Download video</a></span>
+                <span class="reporter-method-output"><br><b><div align="left" style=" height:30px; width:250px; padding: 10px;  border: 2px solid gray; margin: 0; background-color:#19FF3A;">Class - Smoke1 TEST - smoke8 OK! chrome</div></b></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SMOKE_TESTS_SUPPLY" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tests.smoke.Smoke1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">cleanUp(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, s.testovoikom...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(http://suptest.groupstp.ru/app/#!, test)</span>
+                <span class="method-start">12318 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke1 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1(...)</span>
+                <span class="method-start">20424 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke1(sotrudnik, sotrudnik)</span>
+                <span class="method-start">20626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke1 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1(...)</span>
+                <span class="method-start">90970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke2 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke2(...)</span>
+                <span class="method-start">94128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke2(nomenklatura, nomenklatura)</span>
+                <span class="method-start">94139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke2 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke2(...)</span>
+                <span class="method-start">118041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke3 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke3(...)</span>
+                <span class="method-start">121131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke3(sklad, sklad)</span>
+                <span class="method-start">121139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke3 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke3(...)</span>
+                <span class="method-start">141928 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke4 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke4(...)</span>
+                <span class="method-start">145041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke4(snabjenec, snabjenec)</span>
+                <span class="method-start">145049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke4 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke4(...)</span>
+                <span class="method-start">184329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke5 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke5(...)</span>
+                <span class="method-start">187433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke5(sotrudnik, sotrudnik)</span>
+                <span class="method-start">187442 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke5 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke5(...)</span>
+                <span class="method-start">378016 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke6 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke6(...)</span>
+                <span class="method-start">381252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke6(t.postavshik1@gmail.com, t.postavshik2@gmail.com, t.postavshik3@gmail.com, postavshik, snabjenec, sn...)</span>
+                <span class="method-start">381264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke6 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke6(...)</span>
+                <span class="method-start">702274 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke7 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke7(...)</span>
+                <span class="method-start">705544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke7(sotrudnik, sotrudnik)</span>
+                <span class="method-start">705556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke7 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke7(...)</span>
+                <span class="method-start">739492 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke8 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke8(...)</span>
+                <span class="method-start">742613 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke8(nomenklatura, nomenklatura)</span>
+                <span class="method-start">742637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke8 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke8(...)</span>
+                <span class="method-start">778095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke9 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke9(...)</span>
+                <span class="method-start">781233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke9(sklad, sklad)</span>
+                <span class="method-start">781241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke9 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke9(...)</span>
+                <span class="method-start">815585 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke10 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1...)</span>
+                <span class="method-start">818818 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke10(snabjenec, snabjenec)</span>
+                <span class="method-start">818833 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke10 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1...)</span>
+                <span class="method-start">884302 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideo([TestResult name=smoke11 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1...)</span>
+                <span class="method-start">887412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smoke11(sotrudnik, sotrudnik)</span>
+                <span class="method-start">887420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">result([TestResult name=smoke11 on [Smoke1 passed=0 failed=0 skipped=0] status=SUCCESS method=Smoke1.smoke1...)</span>
+                <span class="method-start">911976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">915082 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
