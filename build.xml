@@ -1,0 +1,53 @@
+<project name="ANT_with_ReportsNG" default="run" basedir=".">
+
+ <property name="classes.dir" value="bin" />
+ <property name="src.dir" value="${basedir}/functional-tests/src" />
+ <property name="report.dir" value="${basedir}/test-output/junitreports" />
+ <property name="jars" value="${basedir}/libs"/>
+ <property name="fail.dir" value="${basedir}/failureScreens"/>
+
+
+ <path id="libs">
+  <fileset dir="${basedir}/libs" includes="**\*.jar"/>
+  <pathelement path="${basedir}/${classes.dir}"/>
+ </path>
+
+ <target name="run">
+  <antcall target="init"/>
+  <antcall target="compile"/>
+  <antcall target="runTests"/>
+  </target>
+ 
+ 
+ 
+ <!-- Delete old data and create new directories -->
+ <target name="init" >
+  <echo>Initlizing...</echo>
+  <delete dir="${classes.dir}" />
+  <mkdir dir="${classes.dir}"/>
+  <delete dir="${report.dir}" />
+  <mkdir dir="${report.dir}"/>
+  <delete dir="${fail.dir}" />
+  <mkdir dir="${fail.dir}"/>
+  
+  
+ </target>
+
+ <!-- Complies the java files -->
+ <target name="compile">
+  <echo>Compiling...</echo>
+  <javac includeantruntime="false" debug="true" srcdir="${src.dir}" destdir="${classes.dir}" classpathref="libs" encoding="iso-8859-1" />
+ </target>
+
+ <!-- Runs and generates Reportng report -->
+ <target name="runTests" description="Running tests" >
+  <echo>Running Tests...</echo>
+  <taskdef resource="testngtasks" classpathref="libs"/>
+  <testng  classpath="${jars};${classes.dir}">
+  
+  
+  <xmlfileset dir="${basedir}/functional-tests/src/test/resources" includes="LMS_WEB.xml" />
+  </testng>
+
+</target>
+</project>

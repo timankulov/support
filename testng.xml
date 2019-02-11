@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="SMOKE TESTS SUPPLY" verbose="1" thread-count="1">
+
+	<parameter name="browser" value="chrome" />
+	<!-- Staff Emails -->
+	<parameter name="postavshik1" value="t.postavshik1@gmail.com" />
+	<parameter name="postavshik2" value="t.postavshik2@gmail.com" />
+	<parameter name="postavshik3" value="t.postavshik3@gmail.com" />
+	<!-- Supplyers email password -->
+	<parameter name="email_password" value="postavshik" />
+	
+	<parameter name="golos" value="a.li" />
+	<parameter name="golos_password" value="a.li" />
+	<parameter name="contact" value="s.testovoikompanii1@gmail.com" />
+	<parameter name="contact_password" value="testovoikompanii1" />
+
+	<!-- QA stend -->
+	<parameter name="urlQA" value="http://supqa.groupstp.ru:8008/app/#!" />
+	<!-- Test stend -->
+	<parameter name="url" value="http://suptest.groupstp.ru/app/#!" />
+	<parameter name="platform" value="test" />
+
+	<test name="SMOKE TESTS">
+		<!-- Admin -->
+		<parameter name="admin" value="admin" />
+		<parameter name="admin_password" value="1qaz2wsx" />
+
+		<!-- Staff -->
+		<parameter name="sotrudnik" value="sotrudnik" />
+		<parameter name="sotrudnik_password" value="sotrudnik" />
+
+		<parameter name="nomenklatura" value="nomenklatura" />
+		<parameter name="nomenklatura_password" value="nomenklatura" />
+
+		<parameter name="sklad" value="sklad" />
+		<parameter name="sklad_password" value="sklad" />
+
+		<parameter name="snabjenec" value="snabjenec" />
+		<parameter name="snabjenec_password" value="snabjenec" />
+
+		<classes>
+
+	<class name="com.tests.smoke.Smoke1" /> 
+
+
+<!-- 
+				
+	    
+		
+		
+		 -->	
+	
+
+		</classes>
+	</test>
+</suite> 
+
+
