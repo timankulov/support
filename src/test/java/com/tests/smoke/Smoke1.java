@@ -6,6 +6,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.base.common.BaseTest;
 
+
 public class Smoke1 extends BaseTest {
 	
   // Сознаие заявки и прогон её по всем этапам до стартуса (Выполнено)
