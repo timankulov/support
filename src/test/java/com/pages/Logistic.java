@@ -22,7 +22,7 @@ public class Logistic {
 		// Выбрать по тексту Компания, Поставщик (Треугольник) 
 		public SelenideElement linkByTextLogist(String text) {		
 			//return $(By.xpath("//div[@cuba-id='WebLabel']/b[contains(text(),'"+text+"')]/../../span")).waitUntil(disappear, app.timeOut);
-			return $(By.xpath("//b[text()='"+text+"']")).waitUntil(exist, app.timeOut);
+			return $(By.xpath("//*[text()='"+text+"']")).waitUntil(exist, app.timeOut);
 		}	
 // ###########################
 	
@@ -33,6 +33,12 @@ public class Logistic {
 			return $(By.xpath("//div[@cuba-id='WebLabel' and text()='"+text+"']")).waitUntil(disappear, app.timeOut);
 		}
 // ###########################
+		
+		
+		
+		
+		
+		
 		
 // PopUp Да 
 		public SelenideElement yesBtn() {		

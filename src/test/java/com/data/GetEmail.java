@@ -33,8 +33,6 @@ public class GetEmail {
 	private Message messages[];
 	public String urlWebForm = "";
 
-
-
 	public String getMails(String user, String pass) throws IOException, MessagingException {
 		getConnection(user, pass);
 		readMails();
@@ -49,15 +47,13 @@ public class GetEmail {
 
 	}
 
-	public void getConnection(final String user, final String pass) {	
-		
+	public void getConnection(String user, String pass) {
 		properties = new Properties();
 		properties.setProperty("mail.host", "imap.gmail.com");
 		properties.setProperty("mail.port", "995");
 		properties.setProperty("mail.transport.protocol", "imaps");
 		session = Session.getInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				
 				return new PasswordAuthentication(user, pass);
 			}
 		});

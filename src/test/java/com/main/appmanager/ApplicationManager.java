@@ -39,7 +39,7 @@ import com.pages.Сalendar;
 
 public class ApplicationManager {
 
-	public int timeOut = 25000;
+	public int timeOut = 40000;
 	protected static Logs logs;
 	// ##########################
 	protected Data data;

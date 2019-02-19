@@ -29,7 +29,7 @@ public class Smokes {
 	String time = TIME_FORMAT.format(today);
 	String sec = SEC_FORMAT.format(today);
 	// Для --SMOKE
-	private String nomen = "Сетка С-2";
+	private String nomen = "A";
 
 	// Номенклатурный конотроль (Целесообразность заявки) ГОТОВО отправка на склад
 	// -- SMOKE
@@ -95,7 +95,7 @@ public class Smokes {
 		app.wprocess().linkDevSpan(division).click();
 		app.wprocess().linkQuerySpan(query).click();
 		actions().keyDown(Keys.CONTROL).perform();
-		app.wprocess().linkQueryName("Сетка С-2").click();
+		app.wprocess().linkQueryName("A1").click();
 		// ПЕРЕДАТЬ ВЫДЛИТЬ ВСЕ!!!! .size()
 		// linkQueryName("Перья рифлёные 1/16 кг.").click();
 		// linkQueryName("Синхронизатор 5-4 пер. КПП ЯМЗ").click();
@@ -136,7 +136,7 @@ public class Smokes {
 		app.wprocess().linkCompanySpan(company).click();
 		app.wprocess().linkDevSpan(division).click();
 		app.wprocess().linkQuerySpan(query).click();
-		app.wprocess().linkQueryName("Сетка С-2").doubleClick();
+		app.wprocess().linkQueryName("A1").doubleClick();
 	}
 
 	// Отправка снабженцам -- SMOKE nomenclatureByTextSpan
@@ -242,7 +242,7 @@ public class Smokes {
 				app.data().getData(data, "contact") + " ", "Общий", "Сверхсрочная", "", "", "",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec);
 		// Создание стадии
-		createNomenclature("Номенклатура", "", "Сетка С-2", "10",
+		createNomenclature("Номенклатура", "A", "A1", "10",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec, "",
 				"кг");
 
@@ -283,13 +283,13 @@ public class Smokes {
 				app.data().getData(data, "contact") + " ", "Общий", "Сверхсрочная", "", "", "",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec);
 		// Создание стадии
-		createNomenclature("Номенклатура", "", "Сетка С-2", "10",
+		createNomenclature("Номенклатура", "A", "A1", "10",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec, "",
 				"кг");
-		createNomenclature("Номенклатура", "", "Синхронизатор 5-4 пер. КПП ЯМЗ", "5",
+		createNomenclature("Номенклатура", "A", "A2", "5",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec, "",
 				"шт");
-		createNomenclature("Номенклатура", "ТМЦ", "Перья рифлёные 1/16 кг.", "1",
+		createNomenclature("Номенклатура", "A", "A3", "1",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec, "",
 				"шт");
 		// Сохранить
@@ -320,7 +320,7 @@ public class Smokes {
 				app.data().getData(data, "contact") + " ", "Общий", "Сверхсрочная", "", "", "",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec);
 		// Создание стадии
-		createNomenclature("Номенклатура", "", "Сетка С-2", "10",
+		createNomenclature("Номенклатура", "", "A", "10",
 				"Комментарий авто-тест создал " + sotrudnik + " " + date + " Время создания " + time + "-" + sec, "",
 				"кг");
 
@@ -471,9 +471,11 @@ public class Smokes {
 		app.logist().linkByTextLogist("Подразделение Тестовой Компании 1").doubleClick();
 		sleep(2000);
 		app.logist().linkByTextLogist(app.data().getData("Query1.json", "login")).doubleClick();
-		app.logist().linkByTextNomen("Сетка С-2").click();
+		app.logist().linkByTextLogist("A1").click();
 		// Готово
+		sleep(5000);
 		app.wprocess().btnDone().click();
+		sleep(5000);
 		// Кнопка Да
 		app.logist().yesBtn().click();
 		sleep(5000);

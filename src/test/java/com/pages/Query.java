@@ -430,7 +430,7 @@ public class Query {
 		// ожидания данных по тексту
 		public SelenideElement nomenclatureByText(String text) {
 			SelenideElement nomen = $(By.xpath("//div[text()='" + text + "']")).waitUntil(visible, app.timeOut);
-			sleep(5000);
+			sleep(7000);
 			return nomen;
 		}
 		
@@ -439,7 +439,7 @@ public class Query {
 	// Выбрать вложенную номенклатуту по тексту применим в других случаях
 	// Кклик на треугольник для ракрытия дерева номенклатуры
 	public SelenideElement nomenclatureByTextSpan(String text) {
-		return $(By.xpath("//div[text()='" + text + "']/span")).should(visible);
+		return $(By.xpath("//div[text()='" + text + "']/span")).waitUntil(visible, app.timeOut);
 	}
 
 	// выбор по первому tr

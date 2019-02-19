@@ -6,7 +6,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.base.common.BaseTest;
 
-
 public class Smoke1 extends BaseTest {
 	
   // Сознаие заявки и прогон её по всем этапам до стартуса (Выполнено)
@@ -36,7 +35,7 @@ public class Smoke1 extends BaseTest {
 		app.login().login(nomenklatura, nomenklatura_password);
 		// Номенклатурный конотроль (Целесообразность заявки) ГОТОВО перевод на склад
 		app.smokes().sentQueryToStore("Сверхсрочная", "Тестовая Компания 1", "Подразделение Тестовой Компании 1",
-				app.data().getData("Query1.json", "numberQ"), "Сетка С-2");
+				app.data().getData("Query1.json", "numberQ"), "A1");
 		// Выход
 		app.login().logOut();
 	}
@@ -107,6 +106,7 @@ public class Smoke1 extends BaseTest {
 		app.smokes().openNewTabWebForm(app.getEmail().getMails(postavshik2, email_password));
 		app.smokes().openNewTabWebForm(app.getEmail().getMails(postavshik3, email_password));
 		// Логин снабженец
+		sleep(5000);
 		app.login().login(snabjenec, snabjenec_password);
 		app.smokes().sentQueryToSup("Сверхсрочная", "Тестовая Компания 1", "Подразделение Тестовой Компании 1",
 				app.data().getData("Query1.json", "numberQ"));
