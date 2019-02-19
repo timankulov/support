@@ -32,13 +32,15 @@
 </dependency>
 
 	
+	
 	<!-- https://mvnrepository.com/artifact/ru.sbtqa/monte-media -->
 <dependency>
     <groupId>ru.sbtqa</groupId>
     <artifactId>monte-media</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 	
+
 	
 	
 	
@@ -118,7 +120,7 @@
 				<version>2.16</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng0.xml</suiteXmlFile>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
