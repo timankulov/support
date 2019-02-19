@@ -32,6 +32,14 @@
 </dependency>
 
 	
+	<!-- https://mvnrepository.com/artifact/ru.sbtqa/monte-media -->
+<dependency>
+    <groupId>ru.sbtqa</groupId>
+    <artifactId>monte-media</artifactId>
+    <version>1.0.1</version>
+</dependency>
+	
+	
 	
 	
 	<!-- https://mvnrepository.com/artifact/uk.co.caprica/vlcj -->
