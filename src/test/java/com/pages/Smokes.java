@@ -197,7 +197,7 @@ public class Smokes {
 		app.query().tapyPositionsQuerier(nomenclature);
 		app.query().nomenclatureBtn().click();
 		if (!nomText.equals("")) {
-			sleep(5000);
+			sleep(500);
 			app.query().nomenclatureByTextSpan(nomText).click();
 		}
 		app.query().nomenclatureByText(text).should(exist).click();

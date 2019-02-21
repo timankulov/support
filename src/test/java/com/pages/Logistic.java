@@ -36,19 +36,18 @@ public class Logistic {
 		
 		
 		
-		
-		
+	
 		
 		
 // PopUp Да 
 		public SelenideElement yesBtn() {		
-			return $(By.xpath("//div[@cuba-id='optionDialog_yes']")).waitUntil(disappear, app.timeOut);
+			return $(By.xpath("//div[@cuba-id='optionDialog_yes']")).waitUntil(exist, app.timeOut);
 		}
 		
 		
 // PopUp Нет
 		public SelenideElement noBtn() {		
-			return $(By.xpath("//div[@cuba-id='optionDialog_no']")).waitUntil(disappear, app.timeOut);
+			return $(By.xpath("//div[@cuba-id='optionDialog_no']")).waitUntil(exist, app.timeOut);
 		}
 		
 // ###########################	
